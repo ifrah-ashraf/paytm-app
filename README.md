@@ -4,7 +4,7 @@ A full-stack payment application "Paytm" where users can sign in or sign up, tra
 
 ## Features
 
-- **User Authentication:**
+- **User  Authentication:**
   - Users can sign up and log in using JWT-based authentication.
   - JWT tokens are generated and verified for secure user sessions.
 
@@ -15,15 +15,30 @@ A full-stack payment application "Paytm" where users can sign in or sign up, tra
 - **ACID-compliant Transactions:**
   - MongoDB transactions are implemented to ensure atomicity, consistency, isolation, and durability (ACID) during money transfers.
 
-## To run this locally 
+## To Run This Locally
 
-2. **To run backend**
-- cd paytm/backend
--  npm install
-- Set up environment variables by creating a .env file and in the backend directory add **MONGO_URI** and **PORT** to it 
-- at last run nodemon index.js
+### 1. To Run Backend
 
-2. **To run frontend**
-- cd paytm/frontend
--  npm install
--  npm run dev
+```bash
+cd paytm/backend
+npm install
+```
+
+### Set up environment variables by creating a .env file in the backend directory and add the following variables:
+
+```bash 
+MONGO_URI=<your_mongo_db_connection_string>
+PORT=<your_desired_port>
+```
+
+### Run the application
+``` bash
+nodemon index.js 
+```
+
+### 2. To Run frontend
+``` bash 
+cd paytm/frontend
+npm install
+npm run dev
+```
